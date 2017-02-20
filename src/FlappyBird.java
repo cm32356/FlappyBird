@@ -5,7 +5,7 @@ import javax.swing.*;
 public class FlappyBird {
 	public static void main (String [] args) {
 		int width = 800;
-		int height = 800;
+		int height = 600;
 		
 		JFrame frame = new JFrame("FrameDemo");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -33,8 +33,4 @@ public class FlappyBird {
 	
 	}
 	
-	public static String PrintMyName (){
-		String name = "Carlos";
-		return name;
-	}
 }

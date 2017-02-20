@@ -1,17 +1,34 @@
+import java.awt.Color;
 import java.awt.Graphics;
 
 import javax.swing.JPanel;
 
 public class GamePanel extends JPanel {
-	private static final int RECT_X = 20;
-	   private static final int RECT_Y = RECT_X;
-	   private static final int RECT_WIDTH = 100;
-	   private static final int RECT_HEIGHT = RECT_WIDTH;
+	
+	Bird bird = new Bird();
 
 	   @Override
 	   protected void paintComponent(Graphics g) {
 	      super.paintComponent(g);
-	      // draw the rectangle here
-	      g.drawRect(RECT_X, RECT_Y, RECT_WIDTH, RECT_HEIGHT);
+	      
+	      g.setColor(Color.cyan);
+	      g.fillRect(0, 0, 800, 600);
+	     
+	      g.setColor(Color.orange);
+	      g.fillRect(0, 500, 800, 100);
+	      
+	      g.setColor(Color.red);
+	      g.fillRect(bird.x, bird.y, bird.width, bird.height);
+	      
+	      g.setColor(Color.green);
+	      g.fillRect(0, 475, 800, 25);
+	      
+	           
 	   }
+
+	public void add(Bird bird2) {
+		bird = bird2;
+		// TODO Auto-generated method stub
+		
+	}
 }

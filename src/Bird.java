@@ -2,10 +2,10 @@ import java.awt.Rectangle;
 import java.util.*;
 
 public class Bird {
-	 int height = 40;
-	 int width = 40; 
-	 int x = 300;
-	 int y = -300;
+	 int height = 20;
+	 int width = 20; 
+	 int x = 400;
+	 int y = 300;
 	 
 	
 	 Bird () {
